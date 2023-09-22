@@ -1,0 +1,2189 @@
+/*! CSS Used from: https://gamma.app/_next/static/css/9c0b78938d606930.css */
+:root {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+svg:not(:host).svg-inline--fa,
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+:root {
+  --100vh: 100%;
+}
+html {
+  min-height: var(--100vh);
+  min-height: -webkit-fill-available;
+  height: var(--100vh);
+  height: -webkit-fill-available;
+}
+body {
+  position: relative;
+  --editor-width: 100vw;
+}
+.annotatable-node-view-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.annotatable-node-view-wrapper.is-mobile {
+  flex-direction: column-reverse;
+}
+@media print {
+  * {
+    text-shadow: none !important;
+  }
+  * {
+    background-attachment: unset !important;
+  }
+  [data-doc-background-element-present-mode],
+  [data-doc-background-element] {
+    height: 100% !important;
+    width: 100% !important;
+    background-size: 100% 100% !important;
+  }
+  div.doc-content-wrapper {
+    padding-bottom: 0 !important;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    overflow: visible !important;
+  }
+  .chakra-menu__menu-list,
+  [data-print-hidden] {
+    display: none !important;
+  }
+}
+/*! CSS Used from: https://gamma.app/_next/static/css/a8859db864af7fa7.css */
+body {
+  counter-reset: katexEqnNo mmlEqnNo;
+}
+/*! CSS Used from: Embedded */
+:root,
+[data-theme] {
+  --chakra-ring-inset: var(--chakra-empty);
+  --chakra-ring-offset-width: 0px;
+  --chakra-ring-offset-color: #fff;
+  --chakra-ring-color: rgba(66, 153, 225, 0.6);
+  --chakra-ring-offset-shadow: 0 0 #0000;
+  --chakra-ring-shadow: 0 0 #0000;
+  --chakra-space-x-reverse: 0;
+  --chakra-space-y-reverse: 0;
+  --chakra-colors-transparent: transparent;
+  --chakra-colors-current: currentColor;
+  --chakra-colors-black: #000000;
+  --chakra-colors-white: #ffffff;
+  --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+  --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+  --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+  --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+  --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+  --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+  --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+  --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+  --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.8);
+  --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+  --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+  --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+  --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+  --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+  --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+  --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+  --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+  --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+  --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.8);
+  --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+  --chakra-colors-gray-50: #f9f6f6;
+  --chakra-colors-gray-100: #f7f3f2;
+  --chakra-colors-gray-200: #e5e0df;
+  --chakra-colors-gray-300: #cac5c4;
+  --chakra-colors-gray-400: #ada8a8;
+  --chakra-colors-gray-500: #8f8b8b;
+  --chakra-colors-gray-600: #726e6e;
+  --chakra-colors-gray-700: #565151;
+  --chakra-colors-gray-800: #3c3838;
+  --chakra-colors-gray-900: #272525;
+  --chakra-colors-red-50: #fff5f5;
+  --chakra-colors-red-100: #fed7d7;
+  --chakra-colors-red-200: #feb2b2;
+  --chakra-colors-red-300: #fc8181;
+  --chakra-colors-red-400: #f56565;
+  --chakra-colors-red-500: #e53e3e;
+  --chakra-colors-red-600: #c53030;
+  --chakra-colors-red-700: #9b2c2c;
+  --chakra-colors-red-800: #822727;
+  --chakra-colors-red-900: #63171b;
+  --chakra-colors-orange-50: #fffaf0;
+  --chakra-colors-orange-100: #feebc8;
+  --chakra-colors-orange-200: #fbd38d;
+  --chakra-colors-orange-300: #f6ad55;
+  --chakra-colors-orange-400: #ed8936;
+  --chakra-colors-orange-500: #dd6b20;
+  --chakra-colors-orange-600: #c05621;
+  --chakra-colors-orange-700: #9c4221;
+  --chakra-colors-orange-800: #7b341e;
+  --chakra-colors-orange-900: #652b19;
+  --chakra-colors-yellow-50: #fffff0;
+  --chakra-colors-yellow-100: #fefcbf;
+  --chakra-colors-yellow-200: #faf089;
+  --chakra-colors-yellow-300: #f6e05e;
+  --chakra-colors-yellow-400: #ecc94b;
+  --chakra-colors-yellow-500: #d69e2e;
+  --chakra-colors-yellow-600: #b7791f;
+  --chakra-colors-yellow-700: #975a16;
+  --chakra-colors-yellow-800: #744210;
+  --chakra-colors-yellow-900: #5f370e;
+  --chakra-colors-green-50: #f0fff4;
+  --chakra-colors-green-100: #c6f6d5;
+  --chakra-colors-green-200: #9ae6b4;
+  --chakra-colors-green-300: #68d391;
+  --chakra-colors-green-400: #48bb78;
+  --chakra-colors-green-500: #38a169;
+  --chakra-colors-green-600: #2f855a;
+  --chakra-colors-green-700: #276749;
+  --chakra-colors-green-800: #22543d;
+  --chakra-colors-green-900: #1c4532;
+  --chakra-colors-teal-50: #e6fffa;
+  --chakra-colors-teal-100: #b2f5ea;
+  --chakra-colors-teal-200: #81e6d9;
+  --chakra-colors-teal-300: #4fd1c5;
+  --chakra-colors-teal-400: #38b2ac;
+  --chakra-colors-teal-500: #319795;
+  --chakra-colors-teal-600: #2c7a7b;
+  --chakra-colors-teal-700: #285e61;
+  --chakra-colors-teal-800: #234e52;
+  --chakra-colors-teal-900: #1d4044;
+  --chakra-colors-blue-50: #ebf8ff;
+  --chakra-colors-blue-100: #bee3f8;
+  --chakra-colors-blue-200: #90cdf4;
+  --chakra-colors-blue-300: #63b3ed;
+  --chakra-colors-blue-400: #4299e1;
+  --chakra-colors-blue-500: #3182ce;
+  --chakra-colors-blue-600: #2b6cb0;
+  --chakra-colors-blue-700: #2c5282;
+  --chakra-colors-blue-800: #2a4365;
+  --chakra-colors-blue-900: #1a365d;
+  --chakra-colors-cyan-50: #edfdfd;
+  --chakra-colors-cyan-100: #c4f1f9;
+  --chakra-colors-cyan-200: #9decf9;
+  --chakra-colors-cyan-300: #76e4f7;
+  --chakra-colors-cyan-400: #0bc5ea;
+  --chakra-colors-cyan-500: #00b5d8;
+  --chakra-colors-cyan-600: #00a3c4;
+  --chakra-colors-cyan-700: #0987a0;
+  --chakra-colors-cyan-800: #086f83;
+  --chakra-colors-cyan-900: #065666;
+  --chakra-colors-purple-50: #faf5ff;
+  --chakra-colors-purple-100: #e9d8fd;
+  --chakra-colors-purple-200: #d6bcfa;
+  --chakra-colors-purple-300: #b794f4;
+  --chakra-colors-purple-400: #9f7aea;
+  --chakra-colors-purple-500: #805ad5;
+  --chakra-colors-purple-600: #6b46c1;
+  --chakra-colors-purple-700: #553c9a;
+  --chakra-colors-purple-800: #44337a;
+  --chakra-colors-purple-900: #322659;
+  --chakra-colors-pink-50: #fff5f7;
+  --chakra-colors-pink-100: #fed7e2;
+  --chakra-colors-pink-200: #fbb6ce;
+  --chakra-colors-pink-300: #f687b3;
+  --chakra-colors-pink-400: #ed64a6;
+  --chakra-colors-pink-500: #d53f8c;
+  --chakra-colors-pink-600: #b83280;
+  --chakra-colors-pink-700: #97266d;
+  --chakra-colors-pink-800: #702459;
+  --chakra-colors-pink-900: #521b41;
+  --chakra-colors-linkedin-50: #e8f4f9;
+  --chakra-colors-linkedin-100: #cfedfb;
+  --chakra-colors-linkedin-200: #9bdaf3;
+  --chakra-colors-linkedin-300: #68c7ec;
+  --chakra-colors-linkedin-400: #34b3e4;
+  --chakra-colors-linkedin-500: #00a0dc;
+  --chakra-colors-linkedin-600: #008cc9;
+  --chakra-colors-linkedin-700: #0077b5;
+  --chakra-colors-linkedin-800: #005e93;
+  --chakra-colors-linkedin-900: #004471;
+  --chakra-colors-facebook-50: #e8f4f9;
+  --chakra-colors-facebook-100: #d9dee9;
+  --chakra-colors-facebook-200: #b7c2da;
+  --chakra-colors-facebook-300: #6482c0;
+  --chakra-colors-facebook-400: #4267b2;
+  --chakra-colors-facebook-500: #385898;
+  --chakra-colors-facebook-600: #314e89;
+  --chakra-colors-facebook-700: #29487d;
+  --chakra-colors-facebook-800: #223b67;
+  --chakra-colors-facebook-900: #1e355b;
+  --chakra-colors-messenger-50: #d0e6ff;
+  --chakra-colors-messenger-100: #b9daff;
+  --chakra-colors-messenger-200: #a2cdff;
+  --chakra-colors-messenger-300: #7ab8ff;
+  --chakra-colors-messenger-400: #2e90ff;
+  --chakra-colors-messenger-500: #0078ff;
+  --chakra-colors-messenger-600: #0063d1;
+  --chakra-colors-messenger-700: #0052ac;
+  --chakra-colors-messenger-800: #003c7e;
+  --chakra-colors-messenger-900: #002c5c;
+  --chakra-colors-whatsapp-50: #dffeec;
+  --chakra-colors-whatsapp-100: #b9f5d0;
+  --chakra-colors-whatsapp-200: #90edb3;
+  --chakra-colors-whatsapp-300: #65e495;
+  --chakra-colors-whatsapp-400: #3cdd78;
+  --chakra-colors-whatsapp-500: #22c35e;
+  --chakra-colors-whatsapp-600: #179848;
+  --chakra-colors-whatsapp-700: #0c6c33;
+  --chakra-colors-whatsapp-800: #01421c;
+  --chakra-colors-whatsapp-900: #001803;
+  --chakra-colors-twitter-50: #e5f4fd;
+  --chakra-colors-twitter-100: #c8e9fb;
+  --chakra-colors-twitter-200: #a8dcfa;
+  --chakra-colors-twitter-300: #83cdf7;
+  --chakra-colors-twitter-400: #57bbf5;
+  --chakra-colors-twitter-500: #1da1f2;
+  --chakra-colors-twitter-600: #1a94da;
+  --chakra-colors-twitter-700: #1681bf;
+  --chakra-colors-twitter-800: #136b9e;
+  --chakra-colors-twitter-900: #0d4d71;
+  --chakra-colors-telegram-50: #e3f2f9;
+  --chakra-colors-telegram-100: #c5e4f3;
+  --chakra-colors-telegram-200: #a2d4ec;
+  --chakra-colors-telegram-300: #7ac1e4;
+  --chakra-colors-telegram-400: #47a9da;
+  --chakra-colors-telegram-500: #0088cc;
+  --chakra-colors-telegram-600: #007ab8;
+  --chakra-colors-telegram-700: #006ba1;
+  --chakra-colors-telegram-800: #005885;
+  --chakra-colors-telegram-900: #003f5e;
+  --chakra-colors-gradient-light: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fcf9f5 100%
+  );
+  --chakra-colors-gradient-dark: linear-gradient(
+    180deg,
+    #3c3838 0%,
+    #272525 100%
+  );
+  --chakra-colors-gradient-blue-to-purple: linear-gradient(
+    91.78deg,
+    #3300d9 1.24%,
+    #9d20c9 73.37%,
+    #df7a6c 166.1%
+  );
+  --chakra-colors-gradient-blue-to-orange: linear-gradient(
+    92.91deg,
+    #3300d9 2.18%,
+    #9d20c9 44.94%,
+    #df7a6c 99.91%
+  );
+  --chakra-colors-linen-50: #fefdfc;
+  --chakra-colors-linen-100: #fcfaf8;
+  --chakra-colors-linen-200: #faf5f2;
+  --chakra-colors-linen-300: #f7f1eb;
+  --chakra-colors-linen-400: #f5ece5;
+  --chakra-colors-linen-500: #f2e7de;
+  --chakra-colors-linen-600: #c2b9b2;
+  --chakra-colors-linen-700: #918b85;
+  --chakra-colors-linen-800: #615c59;
+  --chakra-colors-linen-900: #302e2c;
+  --chakra-colors-linen-950: #181716;
+  --chakra-colors-champagne-50: #fdfbfa;
+  --chakra-colors-champagne-100: #fbf8f5;
+  --chakra-colors-champagne-200: #f7f1eb;
+  --chakra-colors-champagne-300: #f4e9e1;
+  --chakra-colors-champagne-400: #f0e2d7;
+  --chakra-colors-champagne-500: #ecdbcd;
+  --chakra-colors-champagne-600: #bdafa4;
+  --chakra-colors-champagne-700: #8e837b;
+  --chakra-colors-champagne-800: #5e5852;
+  --chakra-colors-champagne-900: #2f2c29;
+  --chakra-colors-champagne-950: #181614;
+  --chakra-colors-sunglow-50: #fffae8;
+  --chakra-colors-sunglow-100: #fff5d1;
+  --chakra-colors-sunglow-200: #ffeba2;
+  --chakra-colors-sunglow-300: #ffe074;
+  --chakra-colors-sunglow-400: #ffd645;
+  --chakra-colors-sunglow-500: #ffcc17;
+  --chakra-colors-sunglow-600: #cca312;
+  --chakra-colors-sunglow-700: #997a0e;
+  --chakra-colors-sunglow-800: #665209;
+  --chakra-colors-sunglow-900: #332905;
+  --chakra-colors-sunglow-950: #191402;
+  --chakra-colors-salmon-50: #fef3f0;
+  --chakra-colors-salmon-100: #fde6e1;
+  --chakra-colors-salmon-200: #fbcdc4;
+  --chakra-colors-salmon-300: #f8b5a6;
+  --chakra-colors-salmon-400: #f69c89;
+  --chakra-colors-salmon-500: #f4836b;
+  --chakra-colors-salmon-600: #c36956;
+  --chakra-colors-salmon-700: #924f40;
+  --chakra-colors-salmon-800: #62342b;
+  --chakra-colors-salmon-900: #311a15;
+  --chakra-colors-salmon-950: #180d0b;
+  --chakra-colors-shocking-50: #fdebf9;
+  --chakra-colors-shocking-100: #fbd8f2;
+  --chakra-colors-shocking-200: #f6b0e5;
+  --chakra-colors-shocking-300: #f289d9;
+  --chakra-colors-shocking-400: #ed61cc;
+  --chakra-colors-shocking-500: #e93abf;
+  --chakra-colors-shocking-600: #ba2e99;
+  --chakra-colors-shocking-700: #8c2373;
+  --chakra-colors-shocking-800: #5d174c;
+  --chakra-colors-shocking-900: #2f0c26;
+  --chakra-colors-shocking-950: #170613;
+  --chakra-colors-orchid-50: #f5e9fa;
+  --chakra-colors-orchid-100: #ebd2f4;
+  --chakra-colors-orchid-200: #d8a6e9;
+  --chakra-colors-orchid-300: #c479df;
+  --chakra-colors-orchid-400: #b14dd4;
+  --chakra-colors-orchid-500: #9d20c9;
+  --chakra-colors-orchid-600: #7e1aa1;
+  --chakra-colors-orchid-700: #5e1379;
+  --chakra-colors-orchid-800: #3f0d50;
+  --chakra-colors-orchid-900: #1f0628;
+  --chakra-colors-orchid-950: #100314;
+  --chakra-colors-indigo-50: #ede7f5;
+  --chakra-colors-indigo-100: #dacfeb;
+  --chakra-colors-indigo-200: #b69ed7;
+  --chakra-colors-indigo-300: #916ec3;
+  --chakra-colors-indigo-400: #6d3daf;
+  --chakra-colors-indigo-500: #480d9b;
+  --chakra-colors-indigo-600: #3a0a7c;
+  --chakra-colors-indigo-700: #2b085d;
+  --chakra-colors-indigo-800: #1d053e;
+  --chakra-colors-indigo-900: #0e031f;
+  --chakra-colors-indigo-950: #07010f;
+  --chakra-colors-trueblue-50: #eae7ff;
+  --chakra-colors-trueblue-100: #d5ceff;
+  --chakra-colors-trueblue-200: #aa9dff;
+  --chakra-colors-trueblue-300: #806cff;
+  --chakra-colors-trueblue-400: #553bff;
+  --chakra-colors-trueblue-500: #2b0aff;
+  --chakra-colors-trueblue-600: #2208cc;
+  --chakra-colors-trueblue-700: #1a0699;
+  --chakra-colors-trueblue-800: #110466;
+  --chakra-colors-trueblue-900: #090233;
+  --chakra-colors-trueblue-950: #040119;
+  --chakra-colors-capri-50: #e6f9ff;
+  --chakra-colors-capri-100: #ccf2ff;
+  --chakra-colors-capri-200: #99e5ff;
+  --chakra-colors-capri-300: #66d9ff;
+  --chakra-colors-capri-400: #33ccff;
+  --chakra-colors-capri-500: #00bfff;
+  --chakra-colors-capri-600: #0099cc;
+  --chakra-colors-capri-700: #007399;
+  --chakra-colors-capri-800: #004c66;
+  --chakra-colors-capri-900: #002633;
+  --chakra-colors-capri-950: #001319;
+  --chakra-colors-flamingo-50: #fee6e6;
+  --chakra-colors-flamingo-100: #fddddd;
+  --chakra-colors-flamingo-200: #fcc9c9;
+  --chakra-colors-flamingo-300: #fbb6b6;
+  --chakra-colors-flamingo-400: #f88686;
+  --chakra-colors-flamingo-500: #f65555;
+  --chakra-colors-flamingo-600: #f32525;
+  --chakra-colors-flamingo-700: #d90c0c;
+  --chakra-colors-flamingo-800: #a90909;
+  --chakra-colors-flamingo-900: #780707;
+  --chakra-colors-flamingo-950: #3c0303;
+  --chakra-borders-none: 0;
+  --chakra-borders-1px: 1px solid;
+  --chakra-borders-2px: 2px solid;
+  --chakra-borders-4px: 4px solid;
+  --chakra-borders-8px: 8px solid;
+  --chakra-fonts-heading: "Inter", sans-serif;
+  --chakra-fonts-body: "Inter", sans-serif;
+  --chakra-fonts-mono: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --chakra-fontSizes-3xs: 0.45rem;
+  --chakra-fontSizes-2xs: 0.625rem;
+  --chakra-fontSizes-xs: 0.75rem;
+  --chakra-fontSizes-sm: 0.875rem;
+  --chakra-fontSizes-md: 1rem;
+  --chakra-fontSizes-lg: 1.125rem;
+  --chakra-fontSizes-xl: 1.25rem;
+  --chakra-fontSizes-2xl: 1.5rem;
+  --chakra-fontSizes-3xl: 1.875rem;
+  --chakra-fontSizes-4xl: 2.25rem;
+  --chakra-fontSizes-5xl: 3rem;
+  --chakra-fontSizes-6xl: 3.75rem;
+  --chakra-fontSizes-7xl: 4.5rem;
+  --chakra-fontSizes-8xl: 6rem;
+  --chakra-fontSizes-9xl: 8rem;
+  --chakra-fontSizes-xxs: 11px;
+  --chakra-fontWeights-hairline: 100;
+  --chakra-fontWeights-thin: 200;
+  --chakra-fontWeights-light: 300;
+  --chakra-fontWeights-normal: 400;
+  --chakra-fontWeights-medium: 500;
+  --chakra-fontWeights-semibold: 600;
+  --chakra-fontWeights-bold: 700;
+  --chakra-fontWeights-extrabold: 800;
+  --chakra-fontWeights-black: 900;
+  --chakra-letterSpacings-tighter: -0.05em;
+  --chakra-letterSpacings-tight: -0.025em;
+  --chakra-letterSpacings-normal: 0;
+  --chakra-letterSpacings-wide: 0.025em;
+  --chakra-letterSpacings-wider: 0.05em;
+  --chakra-letterSpacings-widest: 0.1em;
+  --chakra-lineHeights-3: 0.75rem;
+  --chakra-lineHeights-4: 1rem;
+  --chakra-lineHeights-5: 1.25rem;
+  --chakra-lineHeights-6: 1.5rem;
+  --chakra-lineHeights-7: 1.75rem;
+  --chakra-lineHeights-8: 2rem;
+  --chakra-lineHeights-9: 2.25rem;
+  --chakra-lineHeights-10: 2.5rem;
+  --chakra-lineHeights-normal: normal;
+  --chakra-lineHeights-none: 1;
+  --chakra-lineHeights-shorter: 1.25;
+  --chakra-lineHeights-short: 1.375;
+  --chakra-lineHeights-base: 1.5;
+  --chakra-lineHeights-tall: 1.625;
+  --chakra-lineHeights-taller: 2;
+  --chakra-radii-none: 0;
+  --chakra-radii-sm: 0.125rem;
+  --chakra-radii-base: 0.25rem;
+  --chakra-radii-md: 0.375rem;
+  --chakra-radii-lg: 0.5rem;
+  --chakra-radii-xl: 0.75rem;
+  --chakra-radii-2xl: 1rem;
+  --chakra-radii-3xl: 1.5rem;
+  --chakra-radii-full: 9999px;
+  --chakra-space-1: 0.25rem;
+  --chakra-space-2: 0.5rem;
+  --chakra-space-3: 0.75rem;
+  --chakra-space-4: 1rem;
+  --chakra-space-5: 1.25rem;
+  --chakra-space-6: 1.5rem;
+  --chakra-space-7: 1.75rem;
+  --chakra-space-8: 2rem;
+  --chakra-space-9: 2.25rem;
+  --chakra-space-10: 2.5rem;
+  --chakra-space-12: 3rem;
+  --chakra-space-14: 3.5rem;
+  --chakra-space-16: 4rem;
+  --chakra-space-20: 5rem;
+  --chakra-space-24: 6rem;
+  --chakra-space-28: 7rem;
+  --chakra-space-32: 8rem;
+  --chakra-space-36: 9rem;
+  --chakra-space-40: 10rem;
+  --chakra-space-44: 11rem;
+  --chakra-space-48: 12rem;
+  --chakra-space-52: 13rem;
+  --chakra-space-56: 14rem;
+  --chakra-space-60: 15rem;
+  --chakra-space-64: 16rem;
+  --chakra-space-72: 18rem;
+  --chakra-space-80: 20rem;
+  --chakra-space-96: 24rem;
+  --chakra-space-px: 1px;
+  --chakra-space-0-5: 0.125rem;
+  --chakra-space-1-5: 0.375rem;
+  --chakra-space-2-5: 0.625rem;
+  --chakra-space-3-5: 0.875rem;
+  --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+  --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --chakra-shadows-none: none;
+  --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px;
+  --chakra-sizes-1: 0.25rem;
+  --chakra-sizes-2: 0.5rem;
+  --chakra-sizes-3: 0.75rem;
+  --chakra-sizes-4: 1rem;
+  --chakra-sizes-5: 1.25rem;
+  --chakra-sizes-6: 1.5rem;
+  --chakra-sizes-7: 1.75rem;
+  --chakra-sizes-8: 2rem;
+  --chakra-sizes-9: 2.25rem;
+  --chakra-sizes-10: 2.5rem;
+  --chakra-sizes-12: 3rem;
+  --chakra-sizes-14: 3.5rem;
+  --chakra-sizes-16: 4rem;
+  --chakra-sizes-20: 5rem;
+  --chakra-sizes-24: 6rem;
+  --chakra-sizes-28: 7rem;
+  --chakra-sizes-32: 8rem;
+  --chakra-sizes-36: 9rem;
+  --chakra-sizes-40: 10rem;
+  --chakra-sizes-44: 11rem;
+  --chakra-sizes-48: 12rem;
+  --chakra-sizes-52: 13rem;
+  --chakra-sizes-56: 14rem;
+  --chakra-sizes-60: 15rem;
+  --chakra-sizes-64: 16rem;
+  --chakra-sizes-72: 18rem;
+  --chakra-sizes-80: 20rem;
+  --chakra-sizes-96: 24rem;
+  --chakra-sizes-px: 1px;
+  --chakra-sizes-0-5: 0.125rem;
+  --chakra-sizes-1-5: 0.375rem;
+  --chakra-sizes-2-5: 0.625rem;
+  --chakra-sizes-3-5: 0.875rem;
+  --chakra-sizes-max: max-content;
+  --chakra-sizes-min: min-content;
+  --chakra-sizes-full: 100%;
+  --chakra-sizes-3xs: 14rem;
+  --chakra-sizes-2xs: 16rem;
+  --chakra-sizes-xs: 20rem;
+  --chakra-sizes-sm: 24rem;
+  --chakra-sizes-md: 28rem;
+  --chakra-sizes-lg: 32rem;
+  --chakra-sizes-xl: 36rem;
+  --chakra-sizes-2xl: 42rem;
+  --chakra-sizes-3xl: 48rem;
+  --chakra-sizes-4xl: 56rem;
+  --chakra-sizes-5xl: 64rem;
+  --chakra-sizes-6xl: 72rem;
+  --chakra-sizes-7xl: 80rem;
+  --chakra-sizes-8xl: 90rem;
+  --chakra-sizes-prose: 60ch;
+  --chakra-sizes-container-sm: 640px;
+  --chakra-sizes-container-md: 768px;
+  --chakra-sizes-container-lg: 1024px;
+  --chakra-sizes-container-xl: 1280px;
+  --chakra-zIndices-hide: -1;
+  --chakra-zIndices-auto: auto;
+  --chakra-zIndices-base: 0;
+  --chakra-zIndices-docked: 10;
+  --chakra-zIndices-dropdown: 1600;
+  --chakra-zIndices-sticky: 1100;
+  --chakra-zIndices-banner: 1200;
+  --chakra-zIndices-overlay: 1300;
+  --chakra-zIndices-modal: 1800;
+  --chakra-zIndices-popover: 1500;
+  --chakra-zIndices-skipLink: 1600;
+  --chakra-zIndices-toast: 1700;
+  --chakra-zIndices-tooltip: 5600;
+  --chakra-transition-property-common: background-color, border-color, color,
+    fill, stroke, opacity, box-shadow, transform;
+  --chakra-transition-property-colors: background-color, border-color, color,
+    fill, stroke;
+  --chakra-transition-property-dimensions: width, height;
+  --chakra-transition-property-position: left, right, top, bottom;
+  --chakra-transition-property-background: background-color, background-image,
+    background-position;
+  --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --chakra-transition-duration-ultra-fast: 50ms;
+  --chakra-transition-duration-faster: 100ms;
+  --chakra-transition-duration-fast: 150ms;
+  --chakra-transition-duration-normal: 200ms;
+  --chakra-transition-duration-slow: 300ms;
+  --chakra-transition-duration-slower: 400ms;
+  --chakra-transition-duration-ultra-slow: 500ms;
+  --chakra-blur-none: 0;
+  --chakra-blur-sm: 4px;
+  --chakra-blur-base: 8px;
+  --chakra-blur-md: 12px;
+  --chakra-blur-lg: 16px;
+  --chakra-blur-xl: 24px;
+  --chakra-blur-2xl: 40px;
+  --chakra-blur-3xl: 64px;
+  --chakra-breakpoints-base: 0em;
+  --chakra-breakpoints-sm: 30em;
+  --chakra-breakpoints-md: 46em;
+  --chakra-breakpoints-lg: 62em;
+  --chakra-breakpoints-xl: 78em;
+  --chakra-breakpoints-2xl: 96em;
+  --chakra-breakpoints-3xl: 112em;
+  --chakra-breakpoints-4xl: 128em;
+}
+:root[data-theme="light"],
+[data-theme][data-theme="light"] {
+  --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+  --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+  --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+  --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-100);
+  --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+}
+/*! CSS Used from: Embedded */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+}
+body {
+  position: relative;
+  min-height: 100%;
+  font-feature-settings: "kern";
+}
+*,
+*::before,
+*::after {
+  border-width: 0;
+  border-style: solid;
+  box-sizing: border-box;
+}
+pre {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+img {
+  border-style: none;
+}
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+[hidden] {
+  display: none !important;
+}
+body,
+p,
+pre {
+  margin: 0;
+}
+button {
+  background: transparent;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+button {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+img,
+svg,
+iframe {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+:root {
+  --chakra-vh: 100vh;
+}
+/*! CSS Used from: Embedded */
+body {
+  font-family: var(--chakra-fonts-body);
+  color: var(--chakra-colors-chakra-body-text);
+  background: var(--chakra-colors-chakra-body-bg);
+  transition-property: background-color;
+  transition-duration: var(--chakra-transition-duration-normal);
+  line-height: var(--chakra-lineHeights-base);
+}
+*::placeholder {
+  color: var(--chakra-colors-chakra-placeholder-color);
+}
+*,
+*::before,
+::after {
+  border-color: var(--chakra-colors-chakra-border-color);
+  word-wrap: break-word;
+}
+html,
+body {
+  font-family: var(--chakra-fonts-body);
+  font-weight: 500;
+}
+#__next {
+  height: 100%;
+}
+.ProseMirror {
+  outline: 0 none;
+}
+/*! CSS Used from: Embedded */
+.card-content {
+  height: 100%;
+  outline-width: 0px;
+  --box-border-color: var(--chakra-colors-blackAlpha-200);
+  --grid-outline-color: var(--chakra-colors-gray-200);
+  --grid-border: 1px;
+  --grid-padding: 1.22em;
+  line-height: 1.6 !important;
+}
+.card-content .block {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  font-family: var(--body-font);
+  font-weight: var(--body-font-weight);
+  color: var(--body-color);
+}
+.card-content [data-node-view-content-inner="cardLayoutItem"] > .first-block {
+  margin-top: 0em;
+}
+.card-content [data-node-view-content-inner="cardLayoutItem"] > .last-block {
+  margin-bottom: 0em;
+}
+.card-content .block-bullet {
+  margin: 0px 0px 0.4em;
+  text-align: left;
+}
+.card-content .block-bullet:first-of-type {
+  margin-top: 0.75em;
+}
+.card-content .block-bullet li {
+  position: relative;
+}
+.card-content ul.block-bullet[indent="0"] li[data-node-view-content] {
+  list-style: disc;
+  padding-left: 0.4em;
+  margin-left: calc(1.2em);
+}
+.card-content .block-smartLayout [data-node-view-content-outer="smartLayout"] {
+  display: contents;
+}
+.card-content .block-smartLayout [data-node-view-content-inner="smartLayout"] {
+  display: contents;
+}
+.card-content .block-smartLayout [data-selection-ring] {
+  outline-style: none;
+  outline-width: 1px;
+  outline-color: var(--grid-outline-color);
+}
+.card-content .block-smartLayout [data-selection-ring="padded"] {
+  outline-offset: 0.25em;
+}
+.card-content .node-smartLayoutCell {
+  display: contents;
+}
+.card-content .node-smartLayoutCell > [data-node-view-wrapper] {
+  display: contents;
+}
+.card-content
+  .node-smartLayoutCell
+  [data-node-view-content-inner="smartLayoutCell"]
+  > .first-block {
+  margin-top: 0px;
+}
+@media screen and (min-width: 30em) {
+  .card-content
+    .node-smartLayoutCell
+    [data-node-view-content-inner="smartLayoutCell"]
+    > .first-block {
+    margin-top: 0px;
+  }
+}
+.card-content
+  .node-smartLayoutCell
+  [data-node-view-content-inner="smartLayoutCell"]
+  > .last-block {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 30em) {
+  .card-content
+    .node-smartLayoutCell
+    [data-node-view-content-inner="smartLayoutCell"]
+    > .last-block {
+    margin-bottom: 0px;
+  }
+}
+.card-content .block-gridLayout {
+  margin-inline-start: calc(-1 * var(--grid-padding));
+  margin-inline-end: calc(-1 * var(--grid-padding));
+}
+.card-content .block-gridLayout .layout-content {
+  display: contents;
+}
+.card-content .block-gridLayout .layout-content > div {
+  display: contents;
+}
+.card-content .block-gridLayout .grid-cell {
+  position: relative;
+  height: 100%;
+  padding-inline-start: var(--grid-padding);
+  padding-inline-end: var(--grid-padding);
+  display: flex;
+  flex-direction: column;
+  outline-width: 1px;
+  outline-style: none;
+  outline-color: var(--grid-outline-color);
+}
+.card-content .block-gridLayout:hover .add-column {
+  opacity: 1;
+}
+.card-content .node-cardLayoutItem,
+.card-content .node-cardAccentLayoutItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-width: 0px;
+  min-height: 0px;
+}
+.card-content .node-cardLayoutItem > [data-node-view-wrapper],
+.card-content .node-cardAccentLayoutItem > [data-node-view-wrapper] {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.card-content .block-paragraph {
+  font-size: 1em;
+  line-height: 1.6;
+}
+@media print {
+  .card-content .block-paragraph {
+    font-size: 1em;
+  }
+}
+.card-content .block-heading {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.card-content .block-heading .heading {
+  position: relative;
+}
+.card-content .block-heading .heading[level="1"] {
+  font-size: 2em;
+  line-height: 1.25;
+}
+@media screen and (min-width: 30em) {
+  .card-content .block-heading .heading[level="1"] {
+    font-size: 2.5em;
+  }
+}
+@media print {
+  .card-content .block-heading .heading[level="1"] {
+    font-size: 2.5em;
+  }
+}
+.card-content .block-heading .heading[level="3"] {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+@media screen and (min-width: 30em) {
+  .card-content .block-heading .heading[level="3"] {
+    font-size: 1.5em;
+  }
+}
+@media print {
+  .card-content .block-heading .heading[level="3"] {
+    font-size: 1.5em;
+  }
+}
+.card-content .block-heading .heading[level="4"] {
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+@media screen and (min-width: 30em) {
+  .card-content .block-heading .heading[level="4"] {
+    font-size: 1.25em;
+  }
+}
+@media print {
+  .card-content .block-heading .heading[level="4"] {
+    font-size: 1.25em;
+  }
+}
+.card-content .block-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.card-content .block-title .title {
+  position: relative;
+  font-size: 2.25em;
+  line-height: 1.25;
+}
+@media screen and (min-width: 30em) {
+  .card-content .block-title .title {
+    font-size: 3em;
+  }
+}
+@media print {
+  .card-content .block-title .title {
+    font-size: 3em;
+  }
+}
+.card-content .node-gridLayout .block-heading,
+.card-content .node-smartLayoutCell .block-heading {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+.card-content .node-gridLayout .block-paragraph,
+.card-content .node-smartLayoutCell .block-paragraph {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+.card-content
+  [data-node-view-content-inner="card"]:not(:has(> .node-cardAccentLayoutItem))
+  [data-node-view-content-inner="cardLayoutItem"]
+  > .first-block:not(.last-block).block-heading:not(:has(+ .block-heading, + .block-title, + .node-gridLayout)) {
+  margin-bottom: 1.6em;
+}
+@media screen and (max-width: 30rem) {
+  .card-wrapper .insert-card-button {
+    height: var(--chakra-sizes-6);
+    width: var(--chakra-sizes-6);
+    min-width: var(--chakra-sizes-6);
+    font-size: var(--chakra-fontSizes-xs);
+  }
+}
+/*! CSS Used from: Embedded */
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow: hidden scroll;
+}
+/*! CSS Used from: Embedded */
+.css-12m1rgk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: var(--100vh);
+  background-color: var(--chakra-colors-gray-100);
+  color: var(--chakra-colors-gray-800);
+}
+/*! CSS Used from: Embedded */
+.css-95cp4b {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+/*! CSS Used from: Embedded */
+.css-4lhsqr {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  top: 0px;
+  position: relative;
+  z-index: var(--chakra-zIndices-banner);
+}
+.css-ec1ch0 {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  position: relative;
+  height: var(--100vh);
+}
+.css-nqorsg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 0%;
+}
+.css-b95f0i {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+.css-1ind3v2 {
+  display: inline-flex;
+}
+.css-1wh2kri {
+  display: inline-flex;
+  align-self: center;
+  flex-shrink: 0;
+  margin-inline-end: 0.5rem;
+}
+.css-1vumgux {
+  width: 100%;
+  position: relative;
+}
+.css-1vumgux .ProseMirror .block-card {
+  transition-property: opacity;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-1vumgux
+  .ProseMirror
+  .document-content.is-doc-mode
+  .card-wrapper:hover
+  .card-divider {
+  opacity: 1;
+}
+.css-1gnhw0o {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  -webkit-box-pack: var(--card-vertical-align);
+  justify-content: var(--card-vertical-align);
+}
+.css-q5jvu9 {
+  display: grid;
+  grid-gap: var(--grid-border);
+  position: relative;
+  grid-template-columns: 100%;
+}
+.css-1yob2lz {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: var(--chakra-sizes-6);
+  right: calc(var(--chakra-space-3) * -1);
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-tmbpgt {
+  display: contents;
+  position: relative;
+  --item-color: var(--accent-color);
+}
+.css-1l79mj1 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: var(--box-border-radius);
+  gap: 1.25em;
+  position: relative;
+  text-align: left;
+  align-items: flex-start;
+  --flex-align: flex-start;
+}
+.css-1qia9si {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 0.375em;
+  aspect-ratio: 1.618 / 1;
+  --icon-color: var(--heading-color);
+}
+.css-fai0vj {
+  position: relative;
+  cursor: default;
+  height: 100%;
+}
+.css-1s5nxha {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=1000,height=1000/https://english4good.com.br/wp-content/uploads/2020/02/vocabulary-game-Name...-min-2-1536x1152.png"),
+    url("https://english4good.com.br/wp-content/uploads/2020/02/vocabulary-game-Name...-min-2-1536x1152.png"),
+    url("https://tse3.mm.bing.net/th?id=OIP.R2O50zO_FKC8NhG9dJPVIAHaFj&pid=15.1");
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--box-border-radius);
+  transition-property: border-radius;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-uk1bx1 {
+  min-width: 100%;
+  max-width: 100%;
+  flex: 1 1 0%;
+}
+.css-153momc {
+  flex: 1 1 auto;
+  width: calc(15em * var(--char-width-multiple));
+  padding: 1em;
+  position: relative;
+  -webkit-box-align: var(--flex-align);
+  align-items: var(--flex-align);
+  border-radius: 0.375em;
+  background-color: var(--smart-layout-background-color);
+  background-image: var(--smart-layout-background-image);
+  border: 0.0625em solid var(--smart-layout-border-color);
+  --heading-color: var(--body-color);
+}
+.css-153momc .themed-heading {
+  font-weight: var(--heading-font-weight);
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  background: unset;
+  width: fit-content;
+  max-width: 100%;
+}
+.css-1spv6h9 {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(calc(15em * var(--char-width-multiple) - 1.5em), 100%), 1fr)
+  );
+  position: relative;
+  border-radius: var(--box-border-radius);
+}
+.css-1jw19ud {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: var(--card-border-radius);
+  flex-direction: column;
+  -webkit-box-pack: var(--card-vertical-align);
+  justify-content: var(--card-vertical-align);
+}
+.css-2dgbph {
+  display: flex;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: default;
+  font-size: var(--editor-font-size, 1rem);
+  padding-top: var(--card-outer-padding-y);
+  padding-bottom: var(--card-outer-padding-y);
+  padding-left: calc(
+    var(--card-outer-padding-x) + var(--doc-padding-left, 0px)
+  );
+  padding-right: calc(
+    var(--card-outer-padding-x) + var(--doc-padding-right, 0px)
+  );
+  transition-property: transform, padding;
+  transition-duration: 200ms;
+  --card-inner-padding: var(--card-inner-padding-y) var(--card-inner-padding-x);
+  --card-outer-padding-x: 0.5em;
+  --card-outer-padding-y: 0.5em;
+  --comment-padding: var(--card-inner-padding-x);
+  --nested-card-margin: calc(-1 * var(--comment-padding) - 0em);
+  --border-radius-override: var(--undefined);
+  --card-vertical-align: center;
+  --char-width-multiple: 1;
+  --card-inner-padding-y: 1.5em;
+  --card-inner-padding-x: 1.5em;
+  --font-size: 1rem;
+  --card-width: 50.5em;
+}
+.css-cto9py {
+  position: absolute;
+  inset: 0px;
+  border-radius: inherit;
+  box-shadow: var(--md-shadow), var(--card-border-shadow);
+  background-color: var(--card-color);
+}
+@media print {
+  .css-cto9py {
+    box-shadow: var(--chakra-shadows-none);
+    border: var(--card-border);
+  }
+}
+.css-1f1chs0 {
+  width: var(--card-width);
+  max-width: 100%;
+  position: relative;
+  cursor: auto;
+  color: var(--body-color);
+}
+.css-1f1chs0 > .card-content > [data-node-view-content-inner="card"] {
+  display: grid;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 100%;
+  transition-duration: 225ms;
+  transition-property: grid-template-columns, min-height;
+  grid-template: "body" 1fr / 1fr;
+}
+.css-1f1chs0
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > [data-layout-item-id="body"] {
+  grid-area: body / body / body / body;
+}
+.css-1f1chs0
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content] {
+  padding: var(--card-inner-padding);
+}
+.css-1f1chs0
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content]
+  > [data-node-view-content-inner] {
+  max-width: var(--max-content-width);
+  margin: auto;
+}
+.css-1xyppc2 {
+  display: flex;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: default;
+  font-size: var(--editor-font-size, 1rem);
+  padding-top: var(--card-outer-padding-y);
+  padding-bottom: var(--card-outer-padding-y);
+  padding-left: calc(
+    var(--card-outer-padding-x) + var(--doc-padding-left, 0px)
+  );
+  padding-right: calc(
+    var(--card-outer-padding-x) + var(--doc-padding-right, 0px)
+  );
+  transition-property: transform, padding;
+  transition-duration: 200ms;
+  --card-inner-padding: var(--card-inner-padding-y) var(--card-inner-padding-x);
+  --card-outer-padding-x: 0em;
+  --card-outer-padding-y: 0em;
+  --comment-padding: var(--card-inner-padding-x);
+  --nested-card-margin: calc(-1 * var(--comment-padding) - 0em);
+  --border-radius-override: none;
+  --card-vertical-align: center;
+  --char-width-multiple: 1;
+  --card-inner-padding-y: 2.5em;
+  --card-inner-padding-x: 1.5em;
+  --font-size: 1rem;
+  --card-width: 50.5em;
+}
+.css-18p5byz {
+  position: absolute;
+  inset: 0px;
+  border-radius: inherit;
+  outline-offset: -3px;
+  box-shadow: var(--md-shadow), var(--card-border-shadow);
+  background-color: var(--card-color);
+}
+@media print {
+  .css-18p5byz {
+    box-shadow: var(--chakra-shadows-none);
+    border: var(--card-border);
+  }
+}
+.css-empiel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=2400/https://cdn9.dissolve.com/p/D187_177_003/D187_177_003_1200.jpg"),
+    url("https://cdn9.dissolve.com/p/D187_177_003/D187_177_003_1200.jpg"),
+    url("https://tse2.mm.bing.net/th?id=OIP.dm7Rs1WgMw1pprjhZJ6xngHaE8&pid=15.1");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.css-1a2prk {
+  position: absolute;
+  inset: 0px;
+  border-radius: inherit;
+  transition-property: backdrop-filter, background;
+  transition-duration: var(--chakra-transition-duration-normal);
+  background-color: var(--card-color-mask);
+}
+.css-k5ntzr {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=1000,height=1000/https://c.stocksy.com/a/u5DA00/z9/2433618.jpg"),
+    url("https://c.stocksy.com/a/u5DA00/z9/2433618.jpg"),
+    url("https://tse4.mm.bing.net/th?id=OIP.12nPg3IqGdh0qxl7mFLwFAHaE8&pid=15.1");
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--box-border-radius);
+  transition-property: border-radius;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-lvue4i {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  position: relative;
+}
+.css-zfng80 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=2400/https://cdn.gamma.app/theme_images/dune/dune-3_2a9ab711.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.css-1ohwm6s {
+  width: var(--card-width);
+  max-width: 100%;
+  position: relative;
+  cursor: auto;
+  color: var(--body-color);
+}
+.css-1ohwm6s > .card-content > [data-node-view-content-inner="card"] {
+  display: grid;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 100%;
+  transition-duration: 225ms;
+  transition-property: grid-template-columns, min-height;
+  grid-template: "accent" 50vh "body" auto / 1fr;
+}
+.css-1ohwm6s
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > [data-layout-item-id="accent"] {
+  grid-area: accent / accent / accent / accent;
+}
+.css-1ohwm6s
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > [data-layout-item-id="body"] {
+  grid-area: body / body / body / body;
+}
+.css-1ohwm6s
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content],
+.css-1ohwm6s
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardAccentLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content] {
+  padding: var(--card-inner-padding);
+}
+.css-1ohwm6s
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content]
+  > [data-node-view-content-inner] {
+  max-width: var(--max-content-width);
+  margin: auto;
+}
+.css-6jrvg7 {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=1000,height=1000/https://thumbs.dreamstime.com/z/book-shelves-library-different-languages-book-shelves-library-different-languages-rome-italy-circa-june-110017386.jpg"),
+    url("https://thumbs.dreamstime.com/z/book-shelves-library-different-languages-book-shelves-library-different-languages-rome-italy-circa-june-110017386.jpg"),
+    url("https://tse2.mm.bing.net/th?id=OIP.yUIupzwN4SHoVGgRHtgOGAHaFX&pid=15.1");
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--box-border-radius);
+  transition-property: border-radius;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-ridyqk {
+  counter-reset: footnote 0;
+}
+.css-17wejlh {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0px;
+  --comment-slide-margin: 0px;
+  transition-property: margin-left;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-1d9ge3k {
+  width: var(--card-width);
+  max-width: 100%;
+  position: relative;
+  cursor: auto;
+  color: var(--body-color);
+}
+.css-1d9ge3k > .card-content > [data-node-view-content-inner="card"] {
+  display: grid;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 100%;
+  transition-duration: 225ms;
+  transition-property: grid-template-columns, min-height;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(12em, auto);
+}
+@media screen and (min-width: 30em) {
+  .css-1d9ge3k > .card-content > [data-node-view-content-inner="card"] {
+    grid-template-rows: minmax(18em, auto);
+  }
+}
+@media screen and (min-width: 46em) {
+  .css-1d9ge3k > .card-content > [data-node-view-content-inner="card"] {
+    grid-template-rows: minmax(24em, auto);
+  }
+}
+.css-1d9ge3k
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > [data-layout-item-id="accent"] {
+  grid-area: 1 / 1 / auto / auto;
+}
+.css-1d9ge3k
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > [data-layout-item-id="body"] {
+  grid-area: 1 / 1 / auto / auto;
+  z-index: 1;
+}
+.css-1d9ge3k
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content],
+.css-1d9ge3k
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardAccentLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content] {
+  padding: var(--card-inner-padding);
+}
+.css-1d9ge3k
+  > .card-content
+  > [data-node-view-content-inner="card"]
+  > .node-cardLayoutItem
+  > [data-node-view-wrapper]
+  > .card-layout-cell-bg
+  > [data-node-view-content]
+  > [data-node-view-content-inner] {
+  max-width: var(--max-content-width);
+  margin: auto;
+}
+.css-9a7vyu {
+  flex: 1 1 0%;
+  height: 100%;
+}
+.css-1kmguy4 {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: var(--chakra-space-6);
+  position: relative;
+}
+.css-1pe5zv {
+  transition-timing-function: var(--chakra-transition-easing-ease-out);
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: var(--chakra-radii-md);
+  font-weight: 600;
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-8);
+  min-width: var(--chakra-sizes-8);
+  font-size: var(--chakra-fontSizes-sm);
+  padding-inline-start: var(--chakra-space-3);
+  padding-inline-end: var(--chakra-space-3);
+  color: var(--chakra-colors-gray-800);
+  box-shadow: var(--chakra-shadows-md);
+  background: var(--chakra-colors-gradient-light);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--chakra-colors-gray-200);
+  text-decoration: none !important;
+}
+.css-1pe5zv:hover {
+  text-decoration: underline;
+}
+.css-1pe5zv:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+.css-1pe5zv:hover {
+  color: var(--chakra-colors-trueblue-500);
+}
+.css-1pe5zv:hover:disabled {
+  background: initial;
+}
+.css-1pe5zv:active {
+  box-shadow: var(--chakra-shadows-inner);
+}
+.css-1uo6o3 {
+  height: 1em;
+}
+.css-cnw5mt {
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: 750ms;
+  transition-timing-function: var(--chakra-transition-easing-ease-out);
+  opacity: 1;
+}
+.css-2t615b {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  padding: var(--chakra-space-1);
+  padding-inline-start: var(--chakra-space-2);
+  padding-inline-end: var(--chakra-space-2);
+  box-shadow: var(--chakra-shadows-md);
+  position: sticky;
+  top: 0px;
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  transform: translate(0px, 0px);
+  opacity: 1;
+  z-index: var(--chakra-zIndices-sticky);
+  color: rgb(69, 66, 64);
+  --box-border-color: var(--chakra-colors-gray-200);
+  --box-border-radius: var(--chakra-radii-md);
+  border: var(--chakra-borders-none);
+  border-radius: 0px;
+  background-color: rgb(255, 253, 250);
+  filter: none;
+}
+.css-2t615b > :not(style) ~ :not(style) {
+  margin-top: 0px;
+  margin-inline: 0.5rem 0px;
+  margin-bottom: 0px;
+}
+@media print {
+  .css-2t615b {
+    box-shadow: var(--chakra-shadows-none);
+  }
+}
+.css-3r957n {
+  flex: 1 1 0%;
+  font-size: var(--chakra-fontSizes-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--chakra-line-clamp);
+  --chakra-line-clamp: 1;
+  margin-left: var(--chakra-space-2);
+  color: rgb(69, 66, 64);
+}
+.css-1x3q5la {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: var(--chakra-radii-md);
+  font-weight: 600;
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-10);
+  min-width: var(--chakra-sizes-10);
+  font-size: var(--chakra-fontSizes-md);
+  padding-inline-start: var(--chakra-space-4);
+  padding-inline-end: var(--chakra-space-4);
+  background: var(--chakra-colors-transparent);
+  padding: 0px;
+  color: rgb(69, 66, 64);
+}
+.css-1x3q5la:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+.css-1x3q5la:active {
+  background: var(--chakra-colors-trueblue-100);
+}
+.css-1x3q5la:focus {
+  z-index: 1;
+}
+.css-1x3q5la:hover {
+  background: var(--chakra-colors-transparent);
+  color: rgb(184, 142, 35);
+}
+.css-1vwddkz {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition-property: min-height, min-width, width, font-size;
+  transition-duration: 225ms;
+  font-size: var(--font-size);
+  position: relative;
+  width: 100%;
+  min-width: 0%;
+  min-height: var(--card-min-height);
+  border-radius: var(--card-border-radius);
+  --card-border-radius: var(--border-radius-override, 0.375em);
+  --body-font: "DM Sans";
+  --heading-font: "Libre Baskerville";
+  --heading-font-weight: 400;
+  --body-font-weight: 400;
+  --accent-color: #b88e23;
+  --accent-color-background: #f7edd4ff;
+  --accent-color-border: #efdba9ff;
+  --accent-color-background-muted: #fbf6eaff;
+  --accent-color-100: #f7edd4ff;
+  --accent-color-500: #d6a529ff;
+  --expandable-hover-background: #ab84211a;
+  --link-color: #ab8421ff;
+  --link-color-hover: #806319ff;
+  --body-color: #454240;
+  --body-color-muted: #45424080;
+  --body-color-inverted: #fff;
+  --link-color-inverted: #000;
+  --highlight-color-dark: var(--body-color-inverted);
+  --highlight-color-light: var(--body-color);
+  --heading-color: #5c4e3d;
+  --card-color: #fffdfa;
+  --card-color-mask: #fffdfad9;
+  --link-box-shadow: 0 0 0px 3px #ab8421ff;
+  --md-shadow: 0 0.25em 0.375em -0.0625em rgba(0, 0, 0, 0.1),
+    0 0.125em 0.25em -0.0625em rgba(0, 0, 0, 0.06);
+  --line-thickness: 0.2em;
+  --card-border-color: var(--chakra-colors-gray-200);
+  --card-border: 0.0625em solid var(--card-border-color);
+  --card-border-shadow: 0 0 0 0.0625em var(--card-border-color);
+  --clickable-background-color: #f2f0ed99;
+  --box-border-radius: 0.375em;
+  --smart-layout-background-color: #f7edd4ff;
+  --smart-layout-border-color: #efdba9ff;
+  --smart-layout-background-image: var(--accent-gradient-background);
+}
+.css-uvlydm {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  bottom: calc(var(--chakra-space-4) * -1);
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-11h1gik {
+  display: inline-flex;
+  box-shadow: var(--chakra-shadows-md);
+  border-radius: var(--chakra-radii-md);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: var(--chakra-transition-duration-normal);
+}
+.css-11h1gik > :first-of-type:not(:last-of-type) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.css-11h1gik > :not(:first-of-type):not(:last-of-type) {
+  border-radius: 0px;
+}
+.css-11h1gik > :not(:first-of-type):last-of-type {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.css-juf8vo {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-8);
+  font-size: var(--chakra-fontSizes-sm);
+  padding-inline-start: var(--chakra-space-3);
+  padding-inline-end: var(--chakra-space-3);
+  color: var(--chakra-colors-gray-800);
+  background: var(--chakra-colors-gradient-light);
+  border-width: 1px;
+  border-style: solid;
+  padding: 0px;
+  border-radius: var(--chakra-radii-md);
+  box-shadow: var(--chakra-shadows-none);
+  min-width: var(--chakra-sizes-12);
+  transition-property: none;
+  border-color: var(--chakra-colors-gray-100);
+}
+.css-juf8vo:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+.css-juf8vo:hover {
+  color: var(--chakra-colors-trueblue-500);
+}
+.css-juf8vo:hover:disabled {
+  background: initial;
+}
+.css-juf8vo:active {
+  box-shadow: var(--chakra-shadows-inner);
+}
+.css-juf8vo:focus {
+  z-index: 1;
+}
+.css-hvl91o {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-8);
+  font-size: var(--chakra-fontSizes-sm);
+  padding-inline-start: var(--chakra-space-3);
+  padding-inline-end: var(--chakra-space-3);
+  color: var(--chakra-colors-gray-800);
+  background: var(--chakra-colors-gradient-light);
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  padding: 0px;
+  border-radius: var(--chakra-radii-md);
+  box-shadow: var(--chakra-shadows-none);
+  min-width: var(--chakra-sizes-12);
+  transition-property: none;
+  border-color: var(--chakra-colors-gray-100);
+}
+.css-hvl91o:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+.css-hvl91o:hover {
+  color: var(--chakra-colors-trueblue-500);
+}
+.css-hvl91o:hover:disabled {
+  background: initial;
+}
+.css-hvl91o:active {
+  box-shadow: var(--chakra-shadows-inner);
+}
+.css-hvl91o:focus {
+  z-index: 1;
+}
+.css-1sigv9r {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+}
+.css-1ts6ugs {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-8);
+  padding-inline-start: var(--chakra-space-3);
+  padding-inline-end: var(--chakra-space-3);
+  background: var(--chakra-colors-gradient-light);
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  padding: 0px;
+  border-radius: var(--chakra-radii-md);
+  color: var(--chakra-colors-gray-400);
+  box-shadow: var(--chakra-shadows-none);
+  font-size: var(--chakra-fontSizes-lg);
+  max-width: var(--chakra-sizes-6);
+  min-width: var(--chakra-sizes-6);
+  border-color: var(--chakra-colors-gray-100);
+  transition-property: none;
+}
+.css-1ts6ugs:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+.css-1ts6ugs:hover {
+  color: var(--chakra-colors-trueblue-500);
+}
+.css-1ts6ugs:hover:disabled {
+  background: initial;
+}
+.css-1ts6ugs:active {
+  box-shadow: var(--chakra-shadows-inner);
+}
+.css-1ts6ugs:focus {
+  z-index: 1;
+}
+.css-onkibi {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  flex-shrink: 0;
+  color: currentcolor;
+  vertical-align: middle;
+}
+.css-8orl50 {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition-property: min-height, min-width, width, font-size;
+  transition-duration: 225ms;
+  font-size: var(--font-size);
+  position: relative;
+  width: var(--card-width);
+  min-width: 0%;
+  min-height: var(--card-min-height);
+  border-radius: var(--card-border-radius);
+  --card-border-radius: var(--border-radius-override, 0.375em);
+  --body-font: "DM Sans";
+  --heading-font: "Libre Baskerville";
+  --heading-font-weight: 400;
+  --body-font-weight: 400;
+  --accent-color: #b88e23;
+  --accent-color-background: #f7edd4ff;
+  --accent-color-border: #efdba9ff;
+  --accent-color-background-muted: #fbf6eaff;
+  --accent-color-100: #f7edd4ff;
+  --accent-color-500: #d6a529ff;
+  --expandable-hover-background: #ab84211a;
+  --link-color: #ab8421ff;
+  --link-color-hover: #806319ff;
+  --body-color: #454240;
+  --body-color-muted: #45424080;
+  --body-color-inverted: #fff;
+  --link-color-inverted: #000;
+  --highlight-color-dark: var(--body-color-inverted);
+  --highlight-color-light: var(--body-color);
+  --heading-color: #5c4e3d;
+  --card-color: #fffdfa;
+  --card-color-mask: #fffdfad9;
+  --link-box-shadow: 0 0 0px 3px #ab8421ff;
+  --md-shadow: 0 0.25em 0.375em -0.0625em rgba(0, 0, 0, 0.1),
+    0 0.125em 0.25em -0.0625em rgba(0, 0, 0, 0.06);
+  --line-thickness: 0.2em;
+  --card-border-color: var(--chakra-colors-gray-200);
+  --card-border: 0.0625em solid var(--card-border-color);
+  --card-border-shadow: 0 0 0 0.0625em var(--card-border-color);
+  --clickable-background-color: #f2f0ed99;
+  --box-border-radius: 0.375em;
+  --smart-layout-background-color: #f7edd4ff;
+  --smart-layout-border-color: #efdba9ff;
+  --smart-layout-background-image: var(--accent-gradient-background);
+}
+.css-spn4bz {
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-fast);
+  transition-timing-function: var(--chakra-transition-easing-ease-out);
+  cursor: pointer;
+  text-decoration: none;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  color: inherit;
+}
+.css-spn4bz:hover {
+  text-decoration: underline;
+}
+.css-rlutjz {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 0px;
+  min-height: var(--100vh);
+}
+.css-rlutjz .themed-heading {
+  font-weight: var(--heading-font-weight);
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  background: unset;
+  width: fit-content;
+  max-width: 100%;
+}
+.css-gj5rls {
+  display: flex;
+  position: fixed;
+  width: var(--editor-width);
+  height: 100%;
+  min-height: var(--100vh);
+  background-image: url("https://images.unsplash.com/photo-1555947289-0d851755094e?ixid=MnwxOTgwNzN8MHwxfHNlYXJjaHw3MXx8c29mdHxlbnwxfHx8fDE2NjE3OTQyNTQ&ixlib=rb-1.2.1&w=3000&q=25"),
+    url("https://images.unsplash.com/photo-1555947289-0d851755094e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTgwNzN8MHwxfHNlYXJjaHw3MXx8c29mdHxlbnwxfHx8fDE2NjE3OTQyNTQ&ixlib=rb-1.2.1&q=80&w=200");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+  background-attachment: fixed;
+}
+.css-15ubi3h {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  visibility: hidden;
+  background-image: url("https://images.unsplash.com/photo-1555947289-0d851755094e?ixid=MnwxOTgwNzN8MHwxfHNlYXJjaHw3MXx8c29mdHxlbnwxfHx8fDE2NjE3OTQyNTQ&ixlib=rb-1.2.1&w=3000&q=25"),
+    url("https://images.unsplash.com/photo-1555947289-0d851755094e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTgwNzN8MHwxfHNlYXJjaHw3MXx8c29mdHxlbnwxfHx8fDE2NjE3OTQyNTQ&ixlib=rb-1.2.1&q=80&w=200");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.css-lm7x9v {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition-property: min-height, min-width, width, font-size;
+  transition-duration: 225ms;
+  font-size: var(--font-size);
+  position: relative;
+  width: 100%;
+  min-width: 0%;
+  min-height: var(--card-min-height);
+  border-radius: var(--card-border-radius);
+  --card-border-radius: var(--border-radius-override, 0.375em);
+  --body-font: "DM Sans";
+  --heading-font: "Libre Baskerville";
+  --heading-font-weight: 400;
+  --body-font-weight: 400;
+  --accent-color: #b88e23;
+  --accent-color-background: #6b5314ff;
+  --accent-color-border: #816318ff;
+  --accent-color-background-muted: #40320cff;
+  --accent-color-100: #f7edd4ff;
+  --accent-color-500: #d6a529ff;
+  --expandable-hover-background: #b88e231a;
+  --link-color: #b88e23;
+  --link-color-hover: #8d6d1bff;
+  --body-color: #ffffff;
+  --body-color-muted: #ffffff80;
+  --body-color-inverted: #000;
+  --link-color-inverted: #000;
+  --highlight-color-dark: var(--body-color);
+  --highlight-color-light: var(--body-color-inverted);
+  --heading-color: #ffffff;
+  --card-color: #000000;
+  --card-color-mask: #000000cc;
+  --link-box-shadow: 0 0 0px 3px #b88e23ff;
+  --md-shadow: 0 0.25em 0.375em -0.0625em rgba(0, 0, 0, 0.1),
+    0 0.125em 0.25em -0.0625em rgba(0, 0, 0, 0.06);
+  --line-thickness: 0.2em;
+  --card-border-color: var(--chakra-colors-gray-700);
+  --card-border: 0.0625em solid var(--card-border-color);
+  --card-border-shadow: 0 0 0 0.0625em var(--card-border-color);
+  --clickable-background-color: #33333399;
+  --box-border-radius: 0.375em;
+  --smart-layout-background-color: #6b5314ff;
+  --smart-layout-border-color: #816418ff;
+  --smart-layout-background-image: var(--accent-gradient-background);
+}
+.css-r6z5ec {
+  z-index: 1;
+}
+.css-1ezbrr4 {
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  --menu-bg: #fff;
+  --menu-shadow: var(--chakra-shadows-sm);
+  color: var(--chakra-colors-gray-800);
+  min-width: var(--chakra-sizes-3xs);
+  padding-top: var(--chakra-space-2);
+  padding-bottom: var(--chakra-space-2);
+  z-index: 1;
+  border-radius: var(--chakra-radii-2xl);
+  background: var(--chakra-colors-white);
+  padding-inline-start: var(--chakra-space-2);
+  padding-inline-end: var(--chakra-space-2);
+  border: var(--chakra-borders-none);
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: var(--chakra-shadows-lg) !important;
+}
+/*! CSS Used from: Embedded */
+@media {
+  :root {
+    --colors-bounds: rgba(65, 132, 244, 1);
+    --colors-boundsBg: rgba(65, 132, 244, 0.05);
+    --colors-hover: #ececec;
+    --colors-overlay: rgba(0, 0, 0, 0.15);
+    --colors-overlayContrast: rgba(255, 255, 255, 0.15);
+    --colors-panel: #fefefe;
+    --colors-panelContrast: #ffffff;
+    --colors-selected: rgba(66, 133, 244, 1);
+    --colors-selectedContrast: #fefefe;
+    --colors-text: #333333;
+    --colors-tooltip: #1d1d1d;
+    --colors-tooltipContrast: #ffffff;
+    --colors-warn: rgba(255, 100, 100, 1);
+    --colors-canvas: rgb(248, 249, 250);
+    --shadows-2: 0px 1px 1px rgba(0, 0, 0, 0.14);
+    --shadows-3: 0px 2px 3px rgba(0, 0, 0, 0.14);
+    --shadows-4: 0px 4px 5px -1px rgba(0, 0, 0, 0.14);
+    --shadows-8: 0px 12px 17px rgba(0, 0, 0, 0.14);
+    --shadows-12: 0px 12px 17px rgba(0, 0, 0, 0.14);
+    --shadows-24: 0px 24px 38px rgba(0, 0, 0, 0.14);
+    --shadows-key: 1px 1px rgba(0, 0, 0, 1);
+    --shadows-panel: 0px 0px 16px -1px rgba(0, 0, 0, 0.05),
+      0px 0px 16px -8px rgba(0, 0, 0, 0.05),
+      0px 0px 16px -12px rgba(0, 0, 0, 0.12),
+      0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+    --space-0: 2px;
+    --space-1: 3px;
+    --space-2: 4px;
+    --space-3: 8px;
+    --space-4: 12px;
+    --space-5: 16px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --fontSizes-0: 10px;
+    --fontSizes-1: 12px;
+    --fontSizes-2: 13px;
+    --fontSizes-3: 16px;
+    --fontSizes-4: 18px;
+    --fonts-ui: "Recursive", system-ui, sans-serif;
+    --fonts-body: "Recursive", system-ui, sans-serif;
+    --fonts-mono: "Recursive Mono", monospace;
+    --borderWidths-0: var(--borderWidths-1);
+    --radii-0: 2px;
+    --radii-1: 4px;
+    --radii-2: 8px;
+    --radii-3: 12px;
+    --radii-4: 16px;
+  }
+}
+/*! CSS Used from: Embedded */
+.ProseMirror {
+  position: relative;
+}
+.ProseMirror {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: break-spaces;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
+}
+.ProseMirror [contenteditable="false"] {
+  white-space: normal;
+}
+/*! CSS Used from: Embedded */
+.intercom-lightweight-app {
+  position: fixed;
+  z-index: 2147483001;
+  width: 0;
+  height: 0;
+  font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica,
+    Arial, sans-serif;
+}
+@media print {
+  .intercom-lightweight-app {
+    display: none;
+  }
+}
